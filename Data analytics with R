@@ -44,3 +44,11 @@ print(" b is greater than a")
 {
 print("b is not greater than a")
 }
+
+a<-30
+b<-30
+if(b>a) {
+print("b is greater than a")
+} else if(a==b) {
+print(" a and b are equal")
+}
