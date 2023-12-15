@@ -35,3 +35,12 @@ print("also above 20")
 {
 print("but not above 20")
 }
+
+a<-200
+b<-30
+if(b>a) {
+print(" b is greater than a")
+} else
+{
+print("b is not greater than a")
+}
