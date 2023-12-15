@@ -16,3 +16,12 @@ for(x in dice) {
   }
 }
 
+#comparision operator
+#equal
+2==3
+#not equal
+2!=3
+#greater than or equal to
+3>=3
+#less than or equal to
+3<-5
