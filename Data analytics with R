@@ -25,3 +25,13 @@ for(x in dice) {
 3>=3
 #less than or equal to
 3<-5
+
+x<-40
+if(x>10) {
+print("above ten")
+if(x>20)
+print("also above 20")
+} else
+{
+print("but not above 20")
+}
