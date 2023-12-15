@@ -52,3 +52,14 @@ print("b is greater than a")
 } else if(a==b) {
 print(" a and b are equal")
 }
+
+#addition
+2+3
+#subtraction
+5-2
+#multiplication
+5*2
+#division
+6/2
+#exponent
+2^5
