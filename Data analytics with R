@@ -53,6 +53,24 @@ print("b is greater than a")
 print(" a and b are equal")
 }
 
+x <- 10.5
+y <- 55
+
+# Print values of x and y
+x
+y
+
+# Print the class name of x and y
+class(x)
+class(y)
+o/p: 	10.5
+55
+"numeric"
+"numeric"	
+
+
+
+
 #addition
 2+3
 #subtraction
