@@ -155,6 +155,15 @@ printf("\nAverage Waiting Time is --- %f",wtavg/n); printf("\nAverage
 Turnaround Time is --- %f",tatavg/n);
 getch();}
 
+#include<stdio.h>
+#include<sys/types.h>
+#include<unistd.h>
+int main()
+{
+printf("hello siet!\n PID=%d\n",get pid());
+return0
+}
+
 
 
 
