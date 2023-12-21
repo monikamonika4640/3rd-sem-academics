@@ -123,4 +123,37 @@ The output of the code above will be:
 [1] 25
 [1] 45
 
+#create matrix A and B
+A<-matrix(c(1,2,3,4,5,6,7,8,9),nrow=3,ncol=3)
+B<-matrix(c(10,11,12,13,14,15,16,17,18),nrow=3,ncol=3)
+print(A)
+print(B)
+
+#display matrices A and B
+cat("Matrix A:\n",A,"\n\n")
+cat("Matrix B:\n",B,"\n\n")
+print(A)
+print(B)
+
+#transpose of the matrix
+cat("transpose of matrix A:\n",t(A),"\n\n")
+cat("transpose of matrix B:\n",t(B),"\n\n")
+print(t(A))
+print(t(B))
+
+#addition of matrix
+addition_result<-A+B
+cat("matrix addition (A+B):\n",addition_result,"\n\n")
+print((A+B))
+
+#subtraction of matrix
+subtraction_result<-A-B
+cat("matrix subtraction (A-B):\n",subtraction_result,"\n\n")
+print((A-B))
+
+#multiplication of matrix
+multiplication_result<-A%*%B
+cat("matrix multiplication (A*B):\n",multiplication_result,"\n\n")
+print((A%*%B))
+
 
