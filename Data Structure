@@ -1,15 +1,12 @@
 #include <stdio.h>
-#include <string.h>
-// Define a structure to represent a day
+1)#include <string.h>
 struct Day {
 char name[20];
 int date;
 char activity[100];
 };
 int main() {
-// Declare an array of 7 elements to represent the calendar
 struct Day calendar[7];
-// Initialize the calendar with sample data
 strcpy(calendar[0].name, "Monday");
 calendar[0].date = 1;
 strcpy(calendar[0].activity, "Work from 9 AM to 5 PM");
@@ -39,7 +36,7 @@ printf("%s(Date: %d): %s\n", calendar[i].name, calendar[i].date, calendar[i].act
 return 0;
 }
 
-#include <stdio.h>
+2)#include <stdio.h>
 #include <string.h>
 struct Day {
 char name[20];
@@ -107,14 +104,12 @@ printf("\nEnter the MAIN string: \n"); gets(STR);
 printf("\nEnter a PATTERN string: \n"); gets(PAT);
 printf("\nEnter a REPLACE string: \n"); gets(REP);
 i = m = c = j = 0; while ( STR[c] != '\0') {
-// Checking for Match
 if ( STR[m]==PAT[i])
 {
 i++; m++;
 flag=1;
 if( PAT[i] == '\0')
 {
-//copy replace string in ans string
 for(k=0; REP[k] != '\0';k++,j++)
 ans[j] = REP[k];
 i=0;
@@ -174,7 +169,7 @@ case 5: exit(0); break;
 default: printf("\nInvalid choice:\n"); break;
 }
 }
-//return 0;
+return 0;
 }
 void push() 
 {
@@ -246,7 +241,7 @@ printf("%d\n",stack[i]);
 }
 }
 
-#define SIZE 50 /* Size of Stack */
+
 #include <ctype.h>
 #include <stdio.h>
 char s[SIZE];
@@ -668,363 +663,7 @@ exit(0);
 }
 }
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-typedef struct
-{
-int usn;
-char name[20];
-char branch[20];
-int semester;
-char phone[20];
-}STUDENT;
-struct node
-{
-int usn;
-char name[20];
-char branch[20];
-int semester;
-char phone[20];
-struct node *link;
-};
-typedefstruct node*NODE;
-NODE getnode()
-{
-NODE x;
-x=(NODE)malloc(sizeof(struct node));
-if(x==NULL)
-{
-printf("out of memory\n");
-exit(0);
-}
-return x;
-}
-NODE insert_front(STUDENT item,NODE first)
-{
-NODE temp;
-temp=getnode();
-temp->usn=item.usn;
-strcpy(temp->name,item.name);
-strcpy(temp->branch,item.branch);
-temp->semester=item.semester;
-strcpy(temp->phone,item.phone);
-temp->link=NULL;
-if(first==NULL)
-return temp;
-temp->link=first;
-return temp;
-}
-NODE insert_rear(STUDENT item,NODE first)
-{
-NODE temp,cur;
-temp=getnode();
-temp->usn=item.usn;
-strcpy(temp->name,item.name);
-strcpy(temp->branch,item.branch);
-temp->semester=item.semester;
-strcpy(temp->phone,item.phone);
-temp->link=NULL;
-if(first==NULL)
-return temp;
-cur=first;
-while(cur->link!=NULL)
-{
-cur=cur->link;
-}
-cur->link=temp;
-return first;
-}
-NODE delete_front(NODE first)
-{
-NODE temp;
-if(first==NULL)
-{
-printf("student list is empty\n");
-return NULL;
-}
-temp=first;
-temp=temp->link;
-printf("delete student record:USN=%d\n",first->usn);
-free(first);
-return temp;
-}
-NODE delete_rear(NODE first)
-{
-NODE cur,prev;
-if(first==NULL)
-{
-printf("student list is empty cannot delete\n");
-return first;
-}
-if(first->link==NULL)
-{
-printf("delete student record:USN=%d\n",first->usn);
-free(first);
-return NULL;
-}
-prev=NULL;
-cur=first;
-while(cur->link!=NULL)
-{
-prev=cur;
-cur=cur->link;
-}
-printf("delete student record:USN=%d\n",cur->usn);
-free(cur);
-prev->link=NULL;
-return first;
-}
-void display(NODE first)
-{
-NODE cur;
-int count=0;
-if(first==NULL)
-{
-printf("student list is empty\n");
-return;
-}
-cur=first;
-while(cur!=NULL)
-{
-printf("%d\t%s\t%s\t%d\t%s\t\n",cur->usn,cur->name,cur->branch,cur->semester,cur->phone);
-cur=cur->link;
-count++;
-}
-printf("numbrt of students=%d\n",count);
-}
-void main()
-{
-NODE first;
-int choice;
-STUDENT item;
-first=NULL;
-for(;;)
-{
-printf("1.insert_front\n2.insert_rear\n3.delete_front\n4.delete_rear\n5.display\n6.exit\n");
-printf("Enter the choice\n");
-scanf("%d",&choice);
-switch(choice)
-{
-case 1:
-printf("USN :\n");
-scanf("%d",&item.usn);
-printf("name :\n");
-scanf("%s",item.name);
-printf("branch :\n");
-scanf("%s",item.branch);
-printf("semester:\n");
-scanf("%d",&item.semester);
-printf("phone :\n");
-scanf("%s",item.phone);
-first=insert_front(item,first);
-break;
-case 2:
-printf("USN :\n");
-scanf("%d",&item.usn);
-printf("name :\n");
-scanf("%s",item.name);
-printf("branch :\n");
-scanf("%s",item.branch);
-printf("semester:\n");
-scanf("%d",&item.semester);
-printf("phone :\n");
-scanf("%s",item.phone);
-first=insert_rear(item,first);
-break;
-case 3:
-first=delete_front(first);
-break;
-case 4:
-first=delete_rear(first);
-break;
-case 5:
-display(first);
-break;
-default:
-exit(0);
-}
-}
-}
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-typedef struct
-{
-int usn;
-char name[20];
-char branch[20];
-int semester;
-char phone[20];
-}STUDENT;
-struct node
-{
-int usn;
-char name[20];
-char branch[20];
-int semester;
-char phone[20];
-struct node *link;
-};
-typedefstruct node*NODE;
-NODE getnode()
-{
-NODE x;
-x=(NODE)malloc(sizeof(struct node));
-if(x==NULL)
-{
-printf("out of memory\n");
-exit(0);
-}
-return x;
-}
-NODE insert_front(STUDENT item,NODE first)
-{
-NODE temp;
-temp=getnode();
-temp->usn=item.usn;
-strcpy(temp->name,item.name);
-strcpy(temp->branch,item.branch);
-temp->semester=item.semester;
-strcpy(temp->phone,item.phone);
-temp->link=NULL;
-if(first==NULL)
-return temp;
-temp->link=first;
-return temp;
-}
-NODE insert_rear(STUDENT item,NODE first)
-{
-NODE temp,cur;
-temp=getnode();
-temp->usn=item.usn;
-strcpy(temp->name,item.name);
-strcpy(temp->branch,item.branch);
-temp->semester=item.semester;
-strcpy(temp->phone,item.phone);
-temp->link=NULL;
-if(first==NULL)
-return temp;
-cur=first;
-while(cur->link!=NULL)
-{
-cur=cur->link;
-}
-cur->link=temp;
-return first;
-}
-NODE delete_front(NODE first)
-{
-NODE temp;
-if(first==NULL)
-{
-printf("student list is empty\n");
-return NULL;
-}
-temp=first;
-temp=temp->link;
-printf("delete student record:USN=%d\n",first->usn);
-free(first);
-return temp;
-}
-NODE delete_rear(NODE first)
-{
-NODE cur,prev;
-if(first==NULL)
-{
-printf("student list is empty cannot delete\n");
-return first;
-}
-if(first->link==NULL)
-{
-printf("delete student record:USN=%d\n",first->usn);
-free(first);
-return NULL;
-}
-prev=NULL;
-cur=first;
-while(cur->link!=NULL)
-{
-prev=cur;
-cur=cur->link;
-}
-printf("delete student record:USN=%d\n",cur->usn);
-free(cur);
-prev->link=NULL;
-return first;
-}
-void display(NODE first)
-{
-NODE cur;
-int count=0;
-if(first==NULL)
-{
-printf("student list is empty\n");
-return;
-}
-cur=first;
-while(cur!=NULL)
-{
-printf("%d\t%s\t%s\t%d\t%s\t\n",cur->usn,cur->name,cur->branch,cur->semester,cur->phone);
-cur=cur->link;
-count++;
-}
-printf("numbrt of students=%d\n",count);
-}
-void main()
-{
-NODE first;
-int choice;
-STUDENT item;
-first=NULL;
-for(;;)
-{
-printf("1.insert_front\n2.insert_rear\n3.delete_front\n4.delete_rear\n5.display\n6.exit\n");
-printf("Enter the choice\n");
-scanf("%d",&choice);
-switch(choice)
-{
-case 1:
-printf("USN :\n");
-scanf("%d",&item.usn);
-printf("name :\n");
-scanf("%s",item.name);
-printf("branch :\n");
-scanf("%s",item.branch);
-printf("semester:\n");
-scanf("%d",&item.semester);
-printf("phone :\n");
-scanf("%s",item.phone);
-first=insert_front(item,first);
-break;
-case 2:
-printf("USN :\n");
-scanf("%d",&item.usn);
-printf("name :\n");
-scanf("%s",item.name);
-printf("branch :\n");
-scanf("%s",item.branch);
-printf("semester:\n");
-scanf("%d",&item.semester);
-printf("phone :\n");
-scanf("%s",item.phone);
-first=insert_rear(item,first);
-break;
-case 3:
-first=delete_front(first);
-break;
-case 4:
-first=delete_rear(first);
-break;
-case 5:
-display(first);
-break;
-default:
-exit(0);
-}
-}
-}
 
 #include <stdio.h>
 #include <conio.h>
