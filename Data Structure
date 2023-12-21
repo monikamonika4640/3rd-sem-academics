@@ -1,5 +1,5 @@
 #include <stdio.h>
-1)#include <string.h>
+#include <string.h>
 struct Day {
 char name[20];
 int date;
@@ -28,7 +28,6 @@ strcpy(calendar[5].activity, "Weekend getaway");
 strcpy(calendar[6].name, "Sunday");
 calendar[6].date = 7;
 strcpy(calendar[6].activity, "Relax and recharge");
-// Print the calendar
 printf("Calendar for the week:\n");
 for (int i = 0; i < 7; i++) {
 printf("%s(Date: %d): %s\n", calendar[i].name, calendar[i].date, calendar[i].activity);
