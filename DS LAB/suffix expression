@@ -75,3 +75,11 @@ case '/' : return op2/op1;
 case '^' : return pow(op2,op1);
 }
 }
+
+OUTPUT
+Enter Expression:123*+4-
+2.000000 * 3.000000 = 6.000000
+1.000000 + 6.000000 = 7.000000
+7.000000 - 4.000000 = 3.000000
+3.000000
+End Result: 3
