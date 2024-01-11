@@ -34,3 +34,14 @@ printf("%s(Date: %d): %s\n", calendar[i].name, calendar[i].date, calendar[i].act
 }
 return 0;
 }
+
+OUTPUT
+Calendar for the week:
+Monday (Date: 1): Work from 9 AM to 5 PM
+Tuesday (Date: 2): Meeting at 10 AM
+Wednesday (Date: 3): Gym at 6 PM
+Thursday (Date: 4): Dinner with friends at 7 PM
+Friday (Date: 5): Movie night at 8 PM
+Saturday (Date: 6): Weekend getaway
+Sunday (Date: 7): Relax and recharge
+
