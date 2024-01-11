@@ -175,3 +175,26 @@ break;
 }
 }
 }
+
+OUTPUT
+Program For Binary Search Tree
+1. Create
+2. Search
+3. Recursive Traversals
+4. Exit
+Enter your choice :1
+Enter The Element 15
+Want To enter More Elements?(1/0)1
+Enter The Element 25
+Want To enter More Elements?(1/0)1
+Enter The Element 35
+Want To enter More Elements?(1/0)1
+Enter The Element 45
+Want To enter More Elements?(1/0)1
+Enter The Element 5
+Want To enter More Elements?(1/0)1
+Enter The Element 7
+Want To enter More Elements?(1/0)0
+Enter your choice :2
+Enter Element to be searched :7
+The 7 Element is Present Parent of node 7 is 5
