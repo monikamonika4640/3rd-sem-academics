@@ -176,3 +176,37 @@ exit(0);
 }
 }
 }
+
+OUTPUT
+MENU
+1  create a SLL of n emp
+2  Display from beginning
+3 Insert at end
+4 delete at end
+5  Insert at beg
+6 delete at beg
+7  exit
+Enter choice : 1
+Enter no of students : 1
+Enter usn,name, branch, sem, phno of student : 009 suhas ISE 8 9854125422
+Enter choice : 2 Linked list elements from begining : 009 suhas ISE 8 9854125422
+No of students = 1
+Enter choice : 3 Enter usn,name, branch, sem, phno of student : 001 raj CSE 3 111
+Enter choice : 2
+Linked list elements from begining : 009 suhas ISE 8 9854125422 001 raj CSE 3 111
+No of students = 2
+Enter choice : 4 001 raj CSE 3 111 Enter choice : 2
+Linked list elements from begining : 009 suhas ISE 8 9854125422
+No of students = 1
+Enter choice : 5
+Enter usn,name, branch, sem, phno of student : 009 suhas ISE 8 9854125422
+003 harsh cse 3 111
+Enter choice : 2
+Linked list elements from begining : 009 suhas ISE 8 9854125422 003 harsh cse 3 111
+No of students = 2
+Enter choice : 6
+003 harsh cse 3 111
+Enter choice : 2
+Linked list elements from begining : 003 harsh cse 3 111
+No of students = 1
+Enter choice : 7
