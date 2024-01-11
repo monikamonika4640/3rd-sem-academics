@@ -97,3 +97,16 @@ continue;
 }
 }
 }
+
+OUTPUT
+collision handling by linear probing :
+Enter the data1234
+Do you wish to continue ? (1/0) 1 Enter the data2548
+Do you wish to continue ? (1/0) 1 Enter the data3256
+Do you wish to continue ? (1/0) 1 Enter the data1299
+Do you wish to continue ? (1/0) 1 Enter the data1298
+Do you wish to continue ? (1/0) 1 Enter the data1398
+Collision Detected...!!! Collision avoided successfully using LINEAR PROBING
+Do you wish to continue ? (1/0) 0
+1.Display ALL
+2.Filtered Display 2 the hash table is 0 1398 34 1234 48 2548 56 3256 98 1298 99 1299
