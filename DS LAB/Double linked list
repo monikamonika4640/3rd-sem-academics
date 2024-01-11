@@ -146,3 +146,48 @@ free(tail);
 tail=temp1;
 tail->right=NULL;
 }
+
+OUTPUT
+1.Create
+2.Display
+3.Insert at beginning
+4.Insert at End
+5.Delete at beginning
+6.Delete at End
+7.Exit
+Enter choice : 1
+Enter no of employees : 1
+Enter ssn,name,department, designation, salary and phno of employee : 1 RAJ SALES
+MANAGER 15000 911
+Enter choice : 2
+Linked list elements from begining :
+1 RAJ SALES MANAGER 15000.000000 911
+No of employees = 1
+Enter choice : 3
+Enter ssn,name,department, designation, salary and phno of employee : 3 RAM MARKET
+MANAGER 50000 111
+Enter choice : 2
+Linked list elements from begining : 1
+RAJ SALES MANAGER 15000.000000 911 2 RAM MARKET MANAGER 50000.000000
+111
+No of employees = 2
+Enter choice : 4
+3 RAM MARKET MANAGER 50000.000000 111 Enter choice : 2 Linked list elements from
+begining : 1 RAJ SALES MANAGER 15000.000000 911 2 RAVI HR ASST 10000.000000
+123 No of employees = 2
+Enter choice : 5
+Enter ssn,name,department, designation, salary and phno of employee : 0 ALEX EXE
+TRAINEE 2000 133
+Enter choice : 2
+Linked list elements from begining : 3
+ALEX EXE TRAINEE 2000.000000 133 4 RAJ SALES MANAGER 15000.000000 911 5
+RAVI HR ASST 10000.000000 123
+No of employees = 3
+Enter choice : 6
+0 ALEX EXE TRAINEE 2000.000000 133
+Enter choice : 2
+Linked list elements from begining : 3
+RAJ SALES MANAGER 15000.000000 911 4 RAVI HR ASST 10000.000000 123 No of
+employees = 2
+Enter choice : 7
+Exit
