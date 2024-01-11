@@ -36,3 +36,9 @@ ans[j] = '\0';
 printf("\nThe RESULTANT string is:%s\n" ,ans);
 }
 }
+OUTPUT
+Enter the MAIN string: hi vcet
+Enter a PATTERN string: bye
+Enter a REPLACE string: hello
+Pattern doesn’t found!!
+
