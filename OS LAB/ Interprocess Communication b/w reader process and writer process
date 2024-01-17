@@ -39,3 +39,6 @@ int main() {
 
     return 0;
 }
+
+OUTPUT
+Reader process:received message-Hello from the write process!
