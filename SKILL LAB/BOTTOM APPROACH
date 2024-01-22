@@ -14,3 +14,5 @@ return 0;
 }
 
 OUTPUT
+Fibonacci(8) using bottom-up approach = 21
+
