@@ -118,3 +118,7 @@ int main() {
     preOrder(root);
 return 0;
 }
+
+OUTPUT
+Preorder traversal of the constructed AVL tree: 
+30 20 10 25 40 50 
