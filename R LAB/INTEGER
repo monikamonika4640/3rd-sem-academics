@@ -1,0 +1,10 @@
+# Print values of x and y
+x->1000
+y->55
+# Print the class name of x and y
+
+OUTPUT
+class(x)
+[1] "integer"
+ class(y)
+[1] "integer"
