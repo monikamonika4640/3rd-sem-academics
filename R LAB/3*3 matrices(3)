@@ -22,6 +22,6 @@ subtraction_result <- A - B
 cat ("\nSubtraction of Matrix A and Matrix B:\n")
 print(subtraction_result)
 # d) Multiplication
-multiplication_result <- A %*% B # Matrix multiplication
+multiplication_result <- A %*% B 
 cat ("\nMultiplication of Matrix A and Matrix B:\n")
 print(multiplication_result)
